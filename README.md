@@ -1,12 +1,12 @@
 #### Building JSON Manager
 ## JSON Editor using jQuery and Backbone JS
-This is a simple utility web application to edit and manage JSON. And futuristically this application will import and export features.
+This is a simple utility web application to edit and manage JSON. And futuristically this application will support import options.
 
-[Try Now]()
+[Try Now](http://nathan5x.github.io/JSON-Manager-Online/)
 ![JSON Manager Screenshot](/src/JSONManager-Screenshot.png)
 
 ##### Read the documentation for enhancement and further development
-[API Documentation]()
+[API Documentation](http://nathan5x.github.io/JSON-Manager-Online/docs/src/app/app.js.html)
 
 
 #### Technologies Used
