@@ -1,0 +1,27 @@
+{
+  "mainViewTemplate" : "<header>\
+      <h2 class='appname'> JSON Manager </h2>\
+      <a href='#' class='btn btn-sm btn-info pull-right' id='downloadButton' download='ExportedJSON.json'>\
+        <span class='glyphicon glyphicon-save'></span> Download\
+      </a>\
+    </header>\
+    <div class='container-fluid'>\
+      <div class='row'>\
+        <div class='col-md-6'>\
+          <div class='panel panel-info'>\
+            <div class='panel-heading'>JSON Editor</div>\
+             <section id='jsonEditorSection' class='json-editor-view'> </section>\
+            </ul>\
+          </div>\
+        </div>\
+        <div class='col-md-6'>\
+          <div class='panel panel-success'>\
+            <div class='panel-heading'>JSON Viewer (Real-time)</div>\
+             <section id='jsonViewerSection' class='json-export-view'> <div> </div> </section>\
+            </ul>\
+          </div>\
+        </div>\
+      </div>\
+    </div>\
+  "
+}

@@ -1,0 +1,153 @@
+/**
+ * Import required settings and mixins from other config scss files
+ */
+@import 'style_settings';
+
+/**
+ * Custom CSS style for JSON Rendering
+ */
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background: $lightBGColor;
+    color: $appPrimaryColor;
+}
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: $appLightColor;
+    padding: 10px 0;
+    box-shadow: 0 1px 0 0 rgba(0,0,0, 0.1);
+
+    h2 {
+        margin: 0 0 0 50px;
+        display: inline-block;
+        color: $appSecondaryColor;
+        &.appname {
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+    }
+    
+    #downloadButton {
+      margin:10px 20px;
+    }
+}
+
+.container-fluid{
+  margin-top: 80px;
+}
+
+/* JSON tree Styles */
+.jn-json-tree ul > .btn-group, .jn-json-tree li > .btn-group {
+  display: none;
+}
+
+.jn-json-tree.active ul:hover > .btn-group, .jn-json-tree.active li:hover > .btn-group {
+  display: block;
+}
+
+.val-noneditable{
+    outline: 0;
+    font-size: inherit;
+    color: inherit;
+    border: 1px transparent solid;
+    background: 0 0;
+    cursor: text;
+}
+
+.val-editable{
+    border: 1px #000 solid;
+ }
+
+.val-editable:hover{
+   cursor: text;
+ }
+
+ .btn-save, .btn-cancel {
+   margin: 0 5px;
+ }
+
+.jn-json-tree li {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 5px 0 5px;
+  position: relative;
+}
+
+.jn-json-tree li::before,
+.jn-json-tree li::after {
+  content: '';
+  left: -20px;
+  position: absolute;
+  right: auto
+}
+
+.jn-json-tree li::before {
+  border-left: 1px solid #999;
+  bottom: 50px;
+  height: 100%;
+  top: 0;
+  width: 1px
+}
+
+.jn-json-tree li::after {
+  border-top: 1px solid #999;
+  height: 20px;
+  top: 25px;
+  width: 25px
+}
+
+.jn-json-tree li span {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 3px 8px;
+  text-decoration: none;
+}
+
+.jn-json-tree li.parent-list>span {
+  cursor: pointer
+}
+
+.jn-json-tree>ul>li::before,
+.jn-json-tree>ul>li::after {
+  border: 0
+}
+
+.jn-json-tree li:last-child::before {
+  height: 30px
+}
+
+.jn-json-tree li.parent-list>span:hover,
+.jn-json-tree li.parent-list>span:hover+ul li span {
+  background: #eee;
+  border: 1px solid #94a0b4;
+  color: #000
+}
+
+/* JSON Markup style*/
+.json-markup {
+	line-height: 17px;
+	font-size: 13px;
+	font-family: monospace;
+	white-space: pre;
+}
+.json-markup-key {
+	font-weight: bold;
+}
+.json-markup-bool {
+	color: firebrick;
+}
+.json-markup-string {
+	color: green;
+}
+.json-markup-null {
+	color: gray;
+}
+.json-markup-number {
+	color: blue;
+}
